@@ -32,7 +32,7 @@ ko.addEventListener("mouseout", () => {
     ko.src = "./kepek/KO.png";
 })
 ollo.addEventListener("mouseover", () => {
-    ollo.src = "./kepek/OLLO2.png";
+    ollo.src = "./kepek/OLLO2.PNG";
 })
 ollo.addEventListener("mouseout", () => {
     ollo.src = "./kepek/OLLO.png";
