@@ -26,16 +26,16 @@ ollo.addEventListener("click", () => {
 
 //egér mozgást figyelők => kép változik:
 ko.addEventListener("mouseover", () => {
-    ko.src = "./kepek/ko2.png";
+    ko.src = "./kepek/KO2.png";
 })
 ko.addEventListener("mouseout", () => {
-    ko.src = "./kepek/ko.png";
+    ko.src = "./kepek/KO.png";
 })
 ollo.addEventListener("mouseover", () => {
     ollo.src = "./kepek/OLLO2.png";
 })
 ollo.addEventListener("mouseout", () => {
-    ollo.src = "./kepek/ollo.png";
+    ollo.src = "./kepek/OLLO.png";
 })
 papir.addEventListener("mouseover", () => {
     papir.src = "./kepek/PAPIR2.jpg";
