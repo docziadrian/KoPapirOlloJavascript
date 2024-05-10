@@ -24,25 +24,7 @@ ollo.addEventListener("click", () => {
     felhasznaloValasztott("ollo")
 })
 
-//egér mozgást figyelők => kép változik:
-ko.addEventListener("mouseover", () => {
-    ko.src = "./kepek/KO2.png";
-})
-ko.addEventListener("mouseout", () => {
-    ko.src = "./kepek/KO.png";
-})
-ollo.addEventListener("mouseover", () => {
-    ollo.src = "./kepek/OLLO2.PNG";
-})
-ollo.addEventListener("mouseout", () => {
-    ollo.src = "./kepek/OLLO.png";
-})
-papir.addEventListener("mouseover", () => {
-    papir.src = "./kepek/PAPIR2.jpg";
-})
-papir.addEventListener("mouseout", () => {
-    papir.src = "./kepek/PAPIR.png";
-})
+
 
 let felhasznaloValasztott = (jel) =>{
     
@@ -55,18 +37,18 @@ let felhasznaloValasztott = (jel) =>{
         eredmeny.textContent = ""
         if(gepValasztott == "ko" && jel == "ko" || gepValasztott == "papir" && jel == "papir" || gepValasztott == "ollo" && jel == "ollo"){
             eredmenyKiiratas();
-            eredmeny.textContent = "Eredmény: Döntetlen"
+            eredmeny.textContent = "Döntetlen"
 
             return;
         }
         else if(gepValasztott == "ko" && jel == "papir" || gepValasztott == "papir" && jel == "ollo" ||gepValasztott == "ollo" && jel == "ko"){
-            eredmeny.textContent = "Eredmény: Nyereség"
+            eredmeny.textContent = "Nyereség"
             pontF++
             eredmenyKiiratas();
             return;
         }
         else{
-            eredmeny.textContent = "Eredmény: Vereség"
+            eredmeny.textContent = "Vereség"
             pontG++
             eredmenyKiiratas();
             return;

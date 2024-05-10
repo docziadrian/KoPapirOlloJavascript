@@ -58,22 +58,88 @@ img{
 
 .pontok{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin: auto;
+    justify-content: space-around;
+    gap: 15px;
 
 }
 
 
 @media only screen and (max-width: 1200px) {
     .kepek{
-        flex-direction: column;
+        flex-direction: row;
+
+    }
+
+    img{
+        max-height: 17vw;
+        min-height: 17vw;
+        max-width:17vw;
+        min-width: 17vw;
+    
     }
   }
 
-  @media only screen and (max-width: 420px) {
+
+  @media only screen and (max-width: 700px) {
+    .kepek{
+        flex-direction: column;
+    }
+
+    .pontok{
+        flex-direction: column;
+    }
+
     img{
-        width: 80%;
+        min-width: 10%;
+        max-width: 10%;
+        min-height: 10%;
+        max-height: 10%;
     }
   }
+
+
+  @media only screen and (max-width: 400px) {
+    .kepek{
+        flex-direction: column;
+    }
+    
+    .flex{
+        flex-direction: column;
+    }
+
+    .pontok{
+        flex-direction: column;
+    }
+
+    img{
+        min-width: 10%;
+        max-width: 10%;
+        min-height: 10%;
+        max-height: 10%;
+    }
+  }
+
+
   
+
+  .flex{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+    align-self: center;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  #eredmeny{
+    min-width: 30%;
+    max-width: 30%;
+  }
+
+
+
